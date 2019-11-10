@@ -213,12 +213,12 @@
 		ACCBBD9F2377569500863F24 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				ACCBBDBF2377A77800863F24 /* Graph */,
 				ACCBBDB32377795000863F24 /* Main */,
 				ACCBBDB22377602500863F24 /* SignIn */,
 				ACCBBDA0237756AA00863F24 /* SignUpViewController.swift */,
 				ACCBBDA4237757DD00863F24 /* DistanceViewController.swift */,
 				ACCBBDA6237757F400863F24 /* VideoViewController.swift */,
-				ACCBBDA82377580100863F24 /* GraphViewController.swift */,
 				ACCBBDAA2377581800863F24 /* ChartViewController.swift */,
 				ACCBBDAC2377584700863F24 /* ObjectViewController.swift */,
 			);
@@ -241,6 +241,14 @@
 				ACCBBDBA23777CEE00863F24 /* VideoHelper.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		ACCBBDBF2377A77800863F24 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				ACCBBDA82377580100863F24 /* GraphViewController.swift */,
+			);
+			path = Graph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
