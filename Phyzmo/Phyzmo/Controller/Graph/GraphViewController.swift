@@ -149,7 +149,7 @@ class GraphViewController: UIViewController {
         }
     }
     func updateGraph(){
-        
+        /***
         if chatStatus == 0 {
             let line = LineChartDataSet(entries: displacement, label: "Displacement" )
         }
@@ -158,8 +158,9 @@ class GraphViewController: UIViewController {
         }
         else if chatStatus == 2 {
             let line = LineChartDataSet(entries: acceleration, label: "Acceleration" )
-        }
+        }***/
         
+        let line = LineChartDataSet(entries: acceleration, label: "Acceleration" )
         line.colors = [NSUIColor.blue]
         
         let data = LineChartData()
