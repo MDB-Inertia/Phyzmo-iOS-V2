@@ -11,6 +11,7 @@ pod 'Firebase/Analytics'
 pod 'FirebaseAuth'
 pod 'FirebaseDatabase'
 pod 'Firebase/Storage'
+pod 'Charts'
 
   target 'PhyzmoTests' do
     inherit! :search_paths

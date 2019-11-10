@@ -12,8 +12,10 @@ class ChartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
     }
     
     override var shouldAutorotate: Bool {
@@ -21,7 +23,7 @@ class ChartViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+        //UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
     }
     
 

@@ -21,6 +21,14 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+    }
+    
+    override var shouldAutorotate: Bool {
+        return true
+    }
 
     @IBAction func logOutButtonPressed(_ sender: Any) {
         try! Auth.auth().signOut()

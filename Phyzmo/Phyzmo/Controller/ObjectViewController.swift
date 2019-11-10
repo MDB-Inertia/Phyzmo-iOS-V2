@@ -12,16 +12,15 @@ class ObjectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
         UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
         
     }
     
     override var shouldAutorotate: Bool {
         return true
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
     }
     
 
