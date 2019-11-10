@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19A50DB1B91E900DE08A9742 /* Pods_Phyzmo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61EE68B3C5E205949F4AB4A8 /* Pods_Phyzmo.framework */; };
+		54EE2FCF2377977600A80F54 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EE2FCE2377977600A80F54 /* APIClient.swift */; };
 		ACCBBD6C2377549D00863F24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCBBD6B2377549D00863F24 /* AppDelegate.swift */; };
 		ACCBBD712377549D00863F24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCBBD6F2377549D00863F24 /* Main.storyboard */; };
 		ACCBBD732377549E00863F24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCBBD722377549E00863F24 /* Assets.xcassets */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		1985290ECB3BCB8150F14082 /* Pods_Phyzmo_PhyzmoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phyzmo_PhyzmoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB3728C54478249F2EC9553 /* Pods-Phyzmo-PhyzmoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Phyzmo-PhyzmoUITests.release.xcconfig"; path = "Target Support Files/Pods-Phyzmo-PhyzmoUITests/Pods-Phyzmo-PhyzmoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54EE2FCE2377977600A80F54 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		5D3E87A7D8CDF161D4946A4E /* Pods-PhyzmoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhyzmoTests.debug.xcconfig"; path = "Target Support Files/Pods-PhyzmoTests/Pods-PhyzmoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61EE68B3C5E205949F4AB4A8 /* Pods_Phyzmo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phyzmo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7309BE097651644DE2FDA382 /* Pods-PhyzmoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhyzmoTests.release.xcconfig"; path = "Target Support Files/Pods-PhyzmoTests/Pods-PhyzmoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		54EE2FCA2377954600A80F54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54EE2FCD2377976200A80F54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				54EE2FCE2377977600A80F54 /* APIClient.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9436EE9297A66B0B22C3F8D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,7 +183,6 @@
 			isa = PBXGroup;
 			children = (
 				ACCBBD9F2377569500863F24 /* Controller */,
-				ACCBBD9E2377568900863F24 /* Model */,
 				ACCBBD9D2377566C00863F24 /* View */,
 				ACCBBD6B2377549D00863F24 /* AppDelegate.swift */,
 				ACCBBD722377549E00863F24 /* Assets.xcassets */,
@@ -203,17 +219,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		ACCBBD9E2377568900863F24 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		ACCBBD9F2377569500863F24 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				ACCBBDBF2377A77800863F24 /* Graph */,
+=======
+				54EE2FCD2377976200A80F54 /* Helpers */,
+				54EE2FCA2377954600A80F54 /* Model */,
+>>>>>>> 8ae5e7fc3e14dd7f7d6f254b44fdd6e6c300d699
 				ACCBBDB32377795000863F24 /* Main */,
 				ACCBBDB22377602500863F24 /* SignIn */,
 				ACCBBDA0237756AA00863F24 /* SignUpViewController.swift */,
@@ -501,6 +515,7 @@
 				ACCBBDA7237757F400863F24 /* VideoViewController.swift in Sources */,
 				ACCBBD6C2377549D00863F24 /* AppDelegate.swift in Sources */,
 				ACCBBDBB23777CEE00863F24 /* VideoHelper.swift in Sources */,
+				54EE2FCF2377977600A80F54 /* APIClient.swift in Sources */,
 				ACCBBDAB2377581800863F24 /* ChartViewController.swift in Sources */,
 				ACCBBDA5237757DD00863F24 /* DistanceViewController.swift in Sources */,
 				ACCBBDA32377575200863F24 /* MainViewController.swift in Sources */,
